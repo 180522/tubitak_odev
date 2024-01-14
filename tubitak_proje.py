@@ -3,7 +3,7 @@ import re
 from decimal import Decimal
 import numpy as np
 
-kul=input("Lütfen şifreleme istediğiniz metni giriniz= ")
+kul=input("Lütfen şifreleme istediğiniz metni giriniz= ").lower()
 
 FibArray = [1,1]
 
@@ -18,7 +18,7 @@ def fibonacci(n):
         return temp_fib
 def rotate(l, n):
     return l[n:] + l[:n]
-n=input("Kaçıncı fibonaci sayısını istiyorsunuz")
+n=input("Kaçıncı fibonaci sayısını istiyorsunuz= ")
 n=int(n)
 m=int(n+1)
 o=int(n+2)
@@ -95,7 +95,7 @@ sayi=[]
 sayi2=[]
 esitsizlik=False
 for i in range(len(e)):
-    if esitsizlik:
+    if i<=42 and esitsizlik:
         j+=g[i]
         j+=h[i]
         de=int(j)
@@ -104,7 +104,7 @@ for i in range(len(e)):
         sayi.append(de)
 		#print(len(sayi))
         sayi2.append(sayi[::-1])
-    elif  g[i]!=h[i]:
+    elif i<=42 and g[i]!=h[i]:
         j+=g[i]
         j+=h[i]
         de=int(j)
