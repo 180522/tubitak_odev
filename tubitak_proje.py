@@ -3,7 +3,7 @@ import re
 from decimal import Decimal
 import numpy as np
 
-kul=input("lütfen şifreleme istediğiniz metni giriniz")
+kul=input("Lütfen şifreleme istediğiniz metni giriniz= ")
 
 FibArray = [1,1]
 
@@ -18,7 +18,7 @@ def fibonacci(n):
         return temp_fib
 def rotate(l, n):
     return l[n:] + l[:n]
-n=input("kaçıncı fibonaci satisonı şstiyorsunuz")
+n=input("Kaçıncı fibonaci sayısını istiyorsunuz")
 n=int(n)
 m=int(n+1)
 o=int(n+2)
@@ -27,10 +27,10 @@ a=fibonacci(n)
 b=fibonacci(m)
 c=fibonacci(o)
 d=fibonacci(k)
-print((2*a-b)/(2*a+b))
-print((2*c-d)/(2*c+d))
-e=Decimal(math.degrees(math.acos((2*a-b)/(2*a+b))))
-f=Decimal(math.degrees(math.acos((2*c-d)/(2*c+d))))
+print((2*b-a)/(2*b+a))
+print((2*d-c)/(2*d+c))
+e=Decimal(math.degrees(math.acos((2*b-a)/(2*b+a))))
+f=Decimal(math.degrees(math.acos((2*d-c)/(2*d+c))))
 print(e)
 print(f)
 e=str(e)
